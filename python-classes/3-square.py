@@ -6,8 +6,9 @@ class Square:
     """inside"""
 
     def __init__(self, size=0):
-        size(size)
+        self.__size = size
 
+    @size.setter
     def size(self, value=0):
         if type(value) is not int:
             raise TypeError("size must be an integer")
