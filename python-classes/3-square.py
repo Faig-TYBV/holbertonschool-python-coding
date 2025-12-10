@@ -8,6 +8,10 @@ class Square:
     def __init__(self, size=0):
         self.size = size
 
+    @property
+    def size(self):
+        return self.__size
+
     @size.setter
     def size(self, value=0):
         if type(value) is not int:
