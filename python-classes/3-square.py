@@ -6,7 +6,7 @@ class Square:
     """inside"""
 
     def __init__(self, size=0):
-        self.__size = size
+        self.size = size
 
     @size.setter
     def size(self, value=0):
